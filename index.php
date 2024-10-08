@@ -61,7 +61,7 @@
             <img src="https://media.licdn.com/dms/image/v2/D4E03AQFXgz9-uhG-Lw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718268093425?e=1733961600&v=beta&t=zbf5ZEHV9CSFvMEp40MoOTjlM8CHPmgJGAT088FL1vk" alt="" class="rounded-full shadow-lg hover:scale-110 transition duration-500">
         </div>
     </section>
-
+ <h1>kuaci</h1>
     <section class="py-10 px-24">
             <!-- Misi Section -->
             <div class="mb-12">
