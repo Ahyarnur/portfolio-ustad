@@ -51,33 +51,21 @@
     <section class="flex flex-col lg:flex-row justify-center items-center gap-8 min-h-screen pt-28 px-72" id="home">
         
         <div class="w-full lg:w-1/2" data-aos="fade-right" data-aos-offset="200" data-aos-duration="2500">
-            <h3 class="text-xl font-bold">Assalamu'alaikum Wr Wb saya</h3>
-            <h3 class="text-5xl font-bold">Muhammad Ulul Azmi Askandar al-Abshor</h3>
-            <h3 class="text-3xl font-bold">Saya adalah <span id="typing" class="text-green-400"></span></h3>
-            <p class="text-lg mt-4" data-aos="fade-left" data-aos-offset="200" data-aos-duration="2500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem pariatur veritatis ratione nesciunt earum deleniti natus.</p>
+        <h2 class="text-3xl text-center font-bold mb-4 text-green-400">Visi</h2>
+            <p class="text-lg mt-4" data-aos="fade-left" data-aos-offset="200" data-aos-duration="2500">Sebagai seorang ustad, visi saya adalah menciptakan masyarakat yang berakhlak mulia, berlandaskan ajaran Islam yang rahmatan lil ‘alamin, serta membangun generasi yang memiliki pemahaman agama yang mendalam, berintegritas, dan berperan aktif dalam membangun kedamaian dan kesejahteraan di dunia. Saya berkomitmen untuk menyebarkan dakwah yang membawa nilai-nilai kebaikan, toleransi, dan keadilan, serta mendidik umat agar mampu menghadapi tantangan zaman dengan iman dan ilmu pengetahuan yang kokoh.</p>
 
             <!-- Social Icons -->
-            <div class="mt-6 flex space-x-6" data-aos="fade-up" data-aos-duration="1000">
-                <a href="https://www.linkedin.com/in/hyrichwan" class="text-green-400 text-4xl hover:text-black transition">
-                <i class='bx bxl-youtube' ></i>
-                </a>
-                <a href="https://www.instagram.com/ahyarrrrrrrrrr/?utm_source=ig_web_button_share_sheet" class="text-green-400 text-4xl hover:text-black transition">
-                    <i class='bx bxl-instagram-alt'></i>
-                </a>
-                <a href="https://github.com/Ahyarnur" class="text-green-400 text-4xl hover:text-black transition">
-                <i class='bx bxl-facebook'></i>
-                </a>
-            </div>
+           
         </div>
         <div class="w-full lg:w-1/2 flex justify-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1700">
-            <img src="assets/ust.jpeg" alt="" class="rounded-full shadow-lg hover:scale-110 transition duration-500">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFXgz9-uhG-Lw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718268093425?e=1733961600&v=beta&t=zbf5ZEHV9CSFvMEp40MoOTjlM8CHPmgJGAT088FL1vk" alt="" class="rounded-full shadow-lg hover:scale-110 transition duration-500">
         </div>
     </section>
 
-    <section class="py-96">
+    <section class="py-10 px-24">
             <!-- Misi Section -->
             <div class="mb-12">
-                <h2 class="text-3xl font-bold mb-4 mt-32">Misi</h2>
+                <h2 class="text-3xl text-center font-bold text-green-400 mb-4">Misi</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
                     <!-- Misi 1 -->
                     <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:bg-green-400 transition-colors duration-300">
