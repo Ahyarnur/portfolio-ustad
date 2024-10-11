@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kegiatan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+    <nav class="bg-white fixed top-0 left-0 w-full z-50 bg-opacity-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16">
+            <div class="flex">
+              <div class="shrink-0 flex items-center">
+                <a href="/index.html" class="text-2xl font-bold text-green-600">Ky. Fathurrohman</a>
+              </div>
+            </div>
+            <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
+                <div class="relative group">
+                    <a href="/index.html" class="inline-flex items-center text-gray-900 hover:text-green-600 font-medium">
+                      Tentang
+                      <svg class="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white border border-gray-200 shadow-lg py-2 mt-2 w-40 rounded-md">
+                      <a href="#visi" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Visi</a>
+                      <a href="#misi" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Misi</a>
+                    </div>
+                  </div>
+              <div class="relative group">
+                <a href="/dakwah.html" class="inline-flex items-center text-gray-900 hover:text-green-600 font-medium">
+                  Konten Dakwah
+                  <svg class="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+                <div class="absolute hidden group-hover:block bg-white border border-gray-200 shadow-lg py-2 mt-2 w-40 rounded-md">
+                  <a href="/artikel.html" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Artikel</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Video</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Fiqih</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Akhlak</a>
+                </div>
+              </div>
+              <a href="/jadwal.html" class="text-gray-900 hover:text-green-600 font-medium">Jadwal Kegiatan</a>
+              <a href="#" class="text-gray-900 hover:text-green-600 font-medium">Donasi</a>
+              <a href="#" class="text-gray-900 hover:text-green-600 font-medium">Tanya Ust</a>
+              <a href="#" class="text-gray-900 hover:text-green-600 font-medium">Kontak</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+        <div class="container mx-auto text-center mt-40">
+            <h1 class="text-4xl font-bold text-green-600">Jadwal Kegiatan Dakwah</h1>
+            <p class="text-lg text-gray-700 mt-4">Temukan informasi kegiatan dakwah terbaru dan ikut serta bersama kami.</p>
+        </div>
+    
+
+    <!-- Jadwal Terbaru Section -->
+    <section class="py-10">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8 text-green-600 mt-7">Jadwal Terbaru</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                <!-- Card Kegiatan 1 -->
+                <div class="bg-white shadow-lg rounded-lg p-6 hover:bg-green-50 transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-3">Pengajian Umum</h3>
+                    <p class="text-gray-700 mb-4"><i class="bx bx-calendar text-green-600"></i> Jumat, 15 Oktober 2024</p>
+                    <p class="text-gray-700 mb-4"><i class="bx bx-time text-green-600"></i> 18:00 - 20:00 WIB</p>
+                    <p class="text-gray-700 mb-4"><i class="bx bx-map text-green-600"></i> Masjid Raya</p>
+                    <p class="text-gray-700">Pengajian umum dengan topik "Akhlak dalam Kehidupan Sehari-hari" bersama Ust. Azmi.</p>
+                </div>
+
+                <!-- Card Kegiatan 2 -->
+                <div class="bg-white shadow-lg rounded-lg p-6 hover:bg-green-50 transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-3">Kajian Online</h3>
+                    <p class="text-gray-700 mb-4"><i class="bx bx-calendar text-green-600"></i> Sabtu, 16 Oktober 2024</p>
+                    <p class="text-gray-700 mb-4"><i class="bx bx-time text-green-600"></i> 19:00 - 21:00 WIB</p>
+                    <p class="text-gray-700 mb-4"><i class="bx bx-globe text-green-600"></i>YouTube Live</p>
+                    <p class="text-gray-700">Kajian daring dengan tema "Fiqih Shalat" yang dapat diikuti melalui YouTube.</p>
+                </div>
+
+                <!-- Card Kegiatan 3 -->
+                <div class="bg-white shadow-lg rounded-lg p-6 hover:bg-green-50 transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-3">Pelatihan Qiraat</h3>
+                    <p class="text-gray-700 mb-4"><i class="bx bx-calendar text-green-600"></i> Minggu, 17 Oktober 2024</p>
+                    <p class="text-gray-700 mb-4"><i class="bx bx-time text-green-600"></i> 14:00 - 16:00 WIB</p>
+                    <p class="text-gray-700 mb-4"><i class="bx bx-map text-green-600"></i> Masjid Al-Ikhlas</p>
+                    <p class="text-gray-700">Pelatihan khusus bagi yang ingin memperdalam bacaan Al-Qur'an dengan tajwid yang benar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabel Jadwal Kegiatan Mingguan -->
+    <section class="py-10 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6 text-green-600">Jadwal Kegiatan Mingguan</h2>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-300">
+                    <thead>
+                        <tr class="bg-green-600 text-white">
+                            <th class="py-3 px-6">Hari</th>
+                            <th class="py-3 px-6">Kegiatan</th>
+                            <th class="py-3 px-6">Waktu</th>
+                            <th class="py-3 px-6">Lokasi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-4 px-6 border-b">Senin</td>
+                            <td class="py-4 px-6 border-b">Kajian Tafsir</td>
+                            <td class="py-4 px-6 border-b">19:00 - 20:30</td>
+                            <td class="py-4 px-6 border-b">Masjid Nurul Huda</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 border-b">Selasa</td>
+                            <td class="py-4 px-6 border-b">Pelatihan Tilawah</td>
+                            <td class="py-4 px-6 border-b">18:00 - 19:30</td>
+                            <td class="py-4 px-6 border-b">Masjid Agung</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 border-b">Rabu</td>
+                            <td class="py-4 px-6 border-b">Majelis Taklim</td>
+                            <td class="py-4 px-6 border-b">16:00 - 18:00</td>
+                            <td class="py-4 px-6 border-b">Rumah Dakwah</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 border-b">Kamis</td>
+                            <td class="py-4 px-6 border-b">Pengajian Anak</td>
+                            <td class="py-4 px-6 border-b">17:00 - 18:30</td>
+                            <td class="py-4 px-6 border-b">TPQ Al-Ikhlas</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 border-b">Jumat</td>
+                            <td class="py-4 px-6 border-b">Pengajian Umum</td>
+                            <td class="py-4 px-6 border-b">18:00 - 20:00</td>
+                            <td class="py-4 px-6 border-b">Masjid Raya</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="bg-gray-100 py-6">
+        <p class="text-center text-sm text-black">Copyright © 2024 Made with <span class="text-red-500">♥</span> Ahyar Nur Ichwan || All Right Reserved</p>
+    </footer>
+
+</body>
+</html>

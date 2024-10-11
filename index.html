@@ -4,22 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hyrni</title>
-
-    <!-- Tailwind CSS Link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./src/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
     <script src="./typed.min.js"></script>
 </head>
-<body class="bg-white text-black font-poppins">
+<body class="bg-gray-100">
 
-    <!-- Header -->
-    <header class="fixed top-0 left-0 w-full p-12 bg-white bg-opacity-50 backdrop-blur-md flex justify-between items-center z-50">
-       <?php include "nav.php"?>
-    </header>
+    
+    
+    <nav class="bg-white fixed top-0 left-0 w-full z-50 bg-opacity-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16">
+            <div class="flex">
+              <div class="shrink-0 flex items-center">
+                <a href="/index.html" class="text-2xl font-bold text-green-600">Ky. Fathurrohman</a>
+              </div>
+            </div>
+            <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
+                <div class="relative group">
+                    <button class="inline-flex items-center text-gray-900 hover:text-green-600 font-medium ">
+                      Tentang
+                      <svg class="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <div class="absolute hidden group-hover:block bg-white border border-gray-200 shadow-lg py-2 mt-2 w-40 rounded-md">
+                      <a href="#visi" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Visi</a>
+                      <a href="#misi" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Misi</a>
+                    </div>
+                  </div>
+              <div class="relative group">
+                <a href="/dakwah.html" class="inline-flex items-center text-gray-900 hover:text-green-600 font-medium">
+                  Konten Dakwah
+                  <svg class="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+                <div class="absolute hidden group-hover:block bg-white border border-gray-200 shadow-lg py-2 mt-2 w-40 rounded-md">
+                  <a href="/artikel.html" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Artikel</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Video</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Fiqih</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Akhlak</a>
+                </div>
+              </div>
+              <a href="/jadwal.html" class="text-gray-900 hover:text-green-600 font-medium">Jadwal Kegiatan</a>
+              <a href="#" class="text-gray-900 hover:text-green-600 font-medium">Donasi</a>
+              <a href="#" class="text-gray-900 hover:text-green-600 font-medium">Tanya Ust</a>
+              <a href="#" class="text-gray-900 hover:text-green-600 font-medium">Kontak</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
 
     <!-- Home Section -->
     <section class="flex flex-col lg:flex-row justify-center items-center gap-8 min-h-screen pt-28 px-36" id="home">
@@ -33,7 +72,7 @@
             <p class="text-lg mt-4" data-aos="fade-left" data-aos-offset="200" data-aos-duration="2500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem pariatur veritatis ratione nesciunt earum deleniti natus.</p>
 
             <!-- Social Icons -->
-            <div class="mt-6 flex space-x-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="mt-6 flex space-x-6">
                 <a href="https://www.linkedin.com/in/hyrichwan" class="text-green-400 text-4xl hover:text-black transition">
                 <i class='bx bxl-youtube' ></i>
                 </a>
@@ -48,23 +87,22 @@
     </section>
 
 
-    <section class="flex flex-col lg:flex-row justify-center items-center gap-8 min-h-screen pt-28 px-72" id="home">
+    <section class="flex flex-col lg:flex-row justify-center items-center gap-8 min-h-screen py-8 mb-24 px-72" id="visi">
         
-        <div class="w-full lg:w-1/2" data-aos="fade-right" data-aos-offset="200" data-aos-duration="2500">
+        <div class="w-full lg:w-1/2">
         <h2 class="text-3xl text-center font-bold mb-4 text-green-400">Visi</h2>
-            <p class="text-lg mt-4" data-aos="fade-left" data-aos-offset="200" data-aos-duration="2500">Sebagai seorang ustad, visi saya adalah menciptakan masyarakat yang berakhlak mulia, berlandaskan ajaran Islam yang rahmatan lil ‘alamin, serta membangun generasi yang memiliki pemahaman agama yang mendalam, berintegritas, dan berperan aktif dalam membangun kedamaian dan kesejahteraan di dunia. Saya berkomitmen untuk menyebarkan dakwah yang membawa nilai-nilai kebaikan, toleransi, dan keadilan, serta mendidik umat agar mampu menghadapi tantangan zaman dengan iman dan ilmu pengetahuan yang kokoh.</p>
+            <p class="text-lg mt-4">Sebagai seorang ustad, visi saya adalah menciptakan masyarakat yang berakhlak mulia, berlandaskan ajaran Islam yang rahmatan lil ‘alamin, serta membangun generasi yang memiliki pemahaman agama yang mendalam, berintegritas, dan berperan aktif dalam membangun kedamaian dan kesejahteraan di dunia.</p>
 
-            <!-- Social Icons -->
            
         </div>
-        <div class="w-full lg:w-1/2 flex justify-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1700">
+        <div class="w-full lg:w-1/2 flex justify-center">
             <img src="https://media.licdn.com/dms/image/v2/D4E03AQFXgz9-uhG-Lw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718268093425?e=1733961600&v=beta&t=zbf5ZEHV9CSFvMEp40MoOTjlM8CHPmgJGAT088FL1vk" alt="" class="rounded-full shadow-lg hover:scale-110 transition duration-500">
         </div>
     </section>
     
-    <section class="py-10 px-24">
+    <section class="py-8 px-24" id="misi">
             <!-- Misi Section -->
-            <div class="mb-12">
+            <div class="mb-24">
                 <h2 class="text-3xl text-center font-bold text-green-400 mb-4">Misi</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
                     <!-- Misi 1 -->
@@ -101,7 +139,9 @@
     </section>
     <!-- Footer -->
    
-    <?php include "footer.php"?>
+    <footer class="bg-gray-100 py-6">
+        <p class="text-center text-sm text-black">Copyright © 2024 Made with <span class="text-red-500">♥</span> Ahyar Nur Ichwan || All Right Reserved</p>
+    </footer>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
