@@ -13,7 +13,7 @@
 
     <!-- Konten Dakwah (Dropdown) -->
     <div class="relative group">
-        <a href="/dakwah.php" class="text-black font-medium hover:text-green-500">Konten Dakwah</a>
+        <a href="../dakwah.php" class="text-black font-medium hover:text-green-500">Konten Dakwah</a>
         <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-2 mt-1">
             <a href="#artikel" class="block px-4 py-2 text-sm text-black hover:bg-green-100">Artikel</a>
             <a href="#video" class="block px-4 py-2 text-sm text-black hover:bg-green-100">Video</a>
