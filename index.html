@@ -10,6 +10,7 @@
     <link href="./src/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="./typed.min.js"></script>
+    
 </head>
 <body class="bg-gray-100">
 
@@ -24,31 +25,26 @@
               </div>
             </div>
             <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
-                <div class="relative group">
-                    <button class="inline-flex items-center text-gray-900 hover:text-green-600 font-medium ">
-                      Tentang
-                      <svg class="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                      </svg>
-                    </button>
-                    <div class="absolute hidden group-hover:block bg-white border border-gray-200 shadow-lg py-2 mt-2 w-40 rounded-md">
-                      <a href="#visi" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Visi</a>
-                      <a href="#misi" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Misi</a>
-                    </div>
-                  </div>
-              <div class="relative group">
-                <a href="/dakwah.html" class="inline-flex items-center text-gray-900 hover:text-green-600 font-medium">
-                  Konten Dakwah
+              <div class="relative">
+                <button id="dropdownButton" class="inline-flex items-center text-green-600 hover:text-green-600 font-medium">
+                  Tentang
                   <svg class="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                   </svg>
+                </button>
+              
+                <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 shadow-lg py-2 mt-2 w-40 rounded-md">
+                  <a href="#visi" id="visiLink" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Visi</a>
+                  <a href="#misi" id="misiLink" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Misi</a>
+                </div>              
+              </div>
+              
+              
+              
+              <div class="relative group">
+                <a href="/dakwah.html" class="inline-flex items-center text-gray-900 hover:text-green-600 font-medium">
+                  Konten Dakwah
                 </a>
-                <div class="absolute hidden group-hover:block bg-white border border-gray-200 shadow-lg py-2 mt-2 w-40 rounded-md">
-                  <a href="/artikel.html" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Artikel</a>
-                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Video</a>
-                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Fiqih</a>
-                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Akhlak</a>
-                </div>
               </div>
               <a href="/jadwal.html" class="text-gray-900 hover:text-green-600 font-medium">Jadwal Kegiatan</a>
               <a href="#" class="text-gray-900 hover:text-green-600 font-medium">Donasi</a>
@@ -147,5 +143,47 @@
     <script>
       AOS.init();
     </script>
+   <script>
+    // Seleksi elemen dropdown dan button
+    const dropdownButton = document.getElementById('dropdownButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+  
+    // Fungsi untuk menampilkan atau menyembunyikan dropdown
+    dropdownButton.addEventListener('click', function() {
+      dropdownMenu.classList.toggle('hidden'); // Toggle kelas hidden untuk menampilkan/menyembunyikan dropdown
+    });
+  
+    // Menutup dropdown jika klik di luar elemen dropdown
+    window.addEventListener('click', function(e) {
+      if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.add('hidden'); // Sembunyikan dropdown jika klik di luar dropdown
+      }
+    });
+  </script>
+  <script>
+    // Seleksi elemen untuk tautan
+    const visiLink = document.getElementById('visiLink');
+    const misiLink = document.getElementById('misiLink');
+  
+    // Fungsi untuk mengganti warna saat link di klik
+    function setActiveLink(link) {
+      // Hapus warna dari semua link
+      visiLink.classList.remove('text-green-600', 'font-bold');
+      misiLink.classList.remove('text-green-600', 'font-bold');
+  
+      // Tambah warna hanya ke link yang dipilih
+      link.classList.add('text-green-600', 'font-bold');
+    }
+  
+    // Event listener untuk klik pada link "Visi"
+    visiLink.addEventListener('click', function() {
+      setActiveLink(visiLink);
+    });
+  
+    // Event listener untuk klik pada link "Misi"
+    misiLink.addEventListener('click', function() {
+      setActiveLink(misiLink);
+    });
+  </script>
 </body>
 </html>
