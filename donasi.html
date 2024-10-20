@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donasi - Ky. Fathurrohman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white fixed top-0 left-0 w-full z-50 bg-opacity-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex">
+                    <div class="shrink-0 flex items-center">
+                        <a href="/index.html" class="text-2xl font-bold text-green-600">Ky. Fathurrohman</a>
+                    </div>
+                </div>
+  
+                <!-- Hamburger button for mobile -->
+                <div class="sm:hidden flex items-center">
+                    <button id="hamburgerButton" class="text-gray-600 hover:text-green-600 focus:outline-none">
+                        <i class='bx bx-menu text-3xl'></i>
+                    </button>
+                </div>
+  
+                <!-- Full menu for larger screens -->
+                <div class="hidden sm:flex sm:space-x-8 items-center" id="navbarMenu">
+                    <div class="relative">
+                        <a href="/index.html" id="dropdownButton" class="inline-flex items-center text-gray-900 hover:text-green-600 font-medium">
+                            Tentang
+                            <svg class="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                          </a>
+                        <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 shadow-lg py-2 mt-2 w-40 rounded-md">
+                            <a href="#visi" id="visiLink" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Visi</a>
+                            <a href="#misi" id="misiLink" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Misi</a>
+                        </div>
+                    </div>
+                    <a href="/dakwah.html" class="text-gray-900 hover:text-green-600 font-medium">Konten Dakwah</a>
+                    <a href="/jadwal.html" class="text-gray-900 hover:text-green-600 font-medium">Jadwal Kegiatan</a>
+                    <a href="/donasi.html" class="text-green-600 hover:text-green-600 font-medium">Donasi</a>
+                    <a href="#" class="text-gray-900 hover:text-green-600 font-medium">Tanya Ust</a>
+                    <a href="#" class="text-gray-900 hover:text-green-600 font-medium">Kontak</a>
+                </div>
+  
+                <!-- Mobile menu -->
+                <div id="mobileMenu" class="hidden absolute right-5 top-10">
+                  <div class="flex flex-col space-y-4 mt-4 bg-white w-full rounded-md shadow-lg py-4 px-6">
+                      <div class="relative">
+                          <a href="/index.html" id="dropdownButtonMobile" class="inline-flex items-center text-gray-900 hover:text-green-600 font-medium">
+                              Tentang
+                              <svg class="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                              </svg>
+                            </a>
+                          <div id="dropdownMenuMobile" class="hidden bg-white border border-gray-200 shadow-lg py-2 mt-2 w-full rounded-md">
+                              <a href="#visi" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Visi</a>
+                              <a href="#misi" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Misi</a>
+                          </div>
+                      </div>
+                      <a href="/dakwah.html" class="text-gray-900 hover:text-green-600 font-medium">Konten Dakwah</a>
+                      <a href="/jadwal.html" class="text-gray-900 hover:text-green-600 font-medium">Jadwal Kegiatan</a>
+                      <a href="/donasi.html" class="text-green-600 hover:text-green-600 font-medium">Donasi</a>
+                      <a href="#" class="text-gray-900 hover:text-green-600 font-medium">Tanya Ust</a>
+                      <a href="#" class="text-gray-900 hover:text-green-600 font-medium">Kontak</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto my-10 pt-28 gap-8">
+        <h2 class="text-3xl font-bold text-center text-green-600 mb-6">Donasi</h2>
+        <p class="text-center text-gray-600 mb-10">Salurkan donasi Anda untuk kebaikan. Berikut beberapa kategori donasi yang bisa Anda pilih.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Donasi Masjid -->
+            <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-green-600 mb-4">Donasi Masjid</h3>
+                <p class="text-gray-600 mb-6">Bantu pembangunan dan perawatan Masjid.</p>
+                <a href="https://saweria.co/donasiMasjid" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700">Donasi Sekarang</a>
+            </div>
+
+            <!-- Donasi Anak Yatim -->
+            <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-green-600 mb-4">Donasi Anak Yatim</h3>
+                <p class="text-gray-600 mb-6">Bantu anak-anak yatim untuk masa depan mereka.</p>
+                <a href="https://saweria.co/donasiAnakYatim" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700">Donasi Sekarang</a>
+            </div>
+
+            <!-- Donasi Pendidikan -->
+            <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-green-600 mb-4">Donasi Pendidikan</h3>
+                <p class="text-gray-600 mb-6">Dukung program pendidikan untuk meningkatkan kualitas sumber daya manusia.</p>
+                <a href="https://saweria.co/donasiPendidikan" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700">Donasi Sekarang</a>
+            </div>
+
+            <!-- Donasi Panti Jompo -->
+            <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-green-600 mb-4">Donasi Panti Jompo</h3>
+                <p class="text-gray-600 mb-6">Bantu perawatan dan kehidupan orang tua di panti jompo.</p>
+                <a href="https://saweria.co/donasiPantiJompo" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700">Donasi Sekarang</a>
+            </div>
+
+            <!-- Donasi Fasilitas Umum -->
+            <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-green-600 mb-4">Donasi Fasilitas Umum</h3>
+                <p class="text-gray-600 mb-6">Kontribusi untuk pembangunan fasilitas umum seperti jalan dan taman.</p>
+                <a href="https://saweria.co/donasiFasilitasUmum" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700">Donasi Sekarang</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-100 py-6">
+        <p class="text-center text-sm text-black">Copyright © 2024 Made with <span class="text-red-500">♥</span> Pemuda Hijrah || All Right Reserved</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+
+</body>
+</html>
