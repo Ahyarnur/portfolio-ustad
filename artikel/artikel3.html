@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel - Ky. Fathurrohman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <nav class="bg-white fixed top-0 left-0 w-full z-50 bg-opacity-50 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+            <div class="flex">
+                <div class="shrink-0 flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold text-green-600">Ky. Fathurrohman</a>
+                </div>
+            </div>
+
+            <!-- Hamburger button for mobile -->
+            <div class="sm:hidden flex items-center">
+                <button id="hamburgerButton" class="text-gray-600 hover:text-green-600 focus:outline-none">
+                    <i class='bx bx-menu text-3xl'></i>
+                </button>
+            </div>
+
+            <!-- Full menu for larger screens -->
+            <div class="hidden sm:flex sm:space-x-8 items-center" id="navbarMenu">
+                <div class="relative">
+                    <a href="../index.html" id="dropdownButton" class="inline-flex items-center hover:text-green-600 font-medium">
+                        Tentang
+                        <svg class="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                    <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 shadow-lg py-2 mt-2 w-40 rounded-md">
+                        <a href="#visi" id="visiLink" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Visi</a>
+                        <a href="#misi" id="misiLink" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Misi</a>
+                    </div>
+                </div>
+                <a href="../dakwah.html" class="text-green-600 hover:text-green-600 font-medium">Konten Dakwah</a>
+                <a href="../jadwal.html" class="text-gray-900 hover:text-green-600 font-medium">Jadwal Kegiatan</a>
+                <a href="../donasi.html" class="text-gray-900 hover:text-green-600 font-medium">Donasi</a>
+                <a href="../tanya.html" class="text-gray-900 hover:text-green-600 font-medium">Tanya Ust</a>
+                <a href="../kontak.html" class="text-gray-900 hover:text-green-600 font-medium">Kontak</a>
+            </div>
+
+            <!-- Mobile menu -->
+            <div id="mobileMenu" class="hidden absolute right-5 top-10">
+              <div class="flex flex-col space-y-4 mt-4 bg-white w-full rounded-md shadow-lg py-4 px-6">
+                  <div class="relative">
+                      <button id="dropdownButtonMobile" class="inline-flex items-center text-green-600 hover:text-green-600 font-medium">
+                          Tentang
+                          <svg class="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                          </svg>
+                      </button>
+                      <div id="dropdownMenuMobile" class="hidden bg-white border border-gray-200 shadow-lg py-2 mt-2 w-full rounded-md">
+                          <a href="#visi" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Visi</a>
+                          <a href="#misi" class="block px-4 py-2 text-gray-800 hover:bg-green-100">Misi</a>
+                      </div>
+                  </div>
+                  <a href="../dakwah.html" class="text-gray-900 hover:text-green-600 font-medium">Konten Dakwah</a>
+                  <a href="../jadwal.html" class="text-gray-900 hover:text-green-600 font-medium">Jadwal Kegiatan</a>
+                  <a href="../donasi.html" class="text-gray-900 hover:text-green-600 font-medium">Donasi</a>
+                  <a href="../tanya.html" class="text-gray-900 hover:text-green-600 font-medium">Tanya Ust</a>
+                  <a href="../kontak.html" class="text-gray-900 hover:text-green-600 font-medium">Kontak</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+      <section class="container mx-auto mt-28 p-6 bg-white rounded-lg shadow-lg">
+        <!-- Breadcrumb -->
+        <nav class="text-gray-700 mb-4">
+            <a href="../dakwah.html" class="text-green-600">Home</a> /
+            <a href="../artikel.html" class="text-green-600">Artikel Dakwah</a> /
+            <span class="text-gray-500">Judul Artikel</span>
+        </nav>
+
+        <!-- Article Title -->
+        <h1 class="text-4xl font-bold text-gray-900 mb-2">PENGERTIAN AHLUSSUNAH WAL JAMA'AH (ASWAJA)</h1>
+
+        <!-- Metadata (Date, Author) -->
+        <div class="flex items-center text-sm text-gray-600 mb-6">
+            <span>Diposting pada: 10 Oktober 2024</span>
+            <span class="mx-2">|</span>
+            <span>Oleh: Ky. Fathurrohman</span>
+        </div>
+
+        <!-- Article Image -->
+        <img src="../assets/artikel1.jpg" alt="Gambar Artikel" class="w-full h-auto rounded-lg mb-6">
+
+        <!-- Article Content -->
+        <div class="text-lg leading-relaxed text-gray-700">
+            <p class="mb-4">
+                A. Pengertian Ahlussunnah wal Jama’ah (ASWAJA)
+</p>
+<p class="mb-4">
+Kata atau istilah Ahlussunnah wal Jama’ah diambil dari hadis Imam Thabrani sebagai berikut:
+</p>
+<p class="mb-4">
+    افترقت اليهود على إحدى أو اثنتين وسبعين فرقة ، وافترقت النصارى على إحدى أو اثنتين وسبعين فرقة ، وستفترق أمتي على ثلاث وسبعين فرقة، الناجية منها واحدة والباقون هلكى. قيل: ومن الناجية ؟ قال: أهل السنة والجماعة. قيل: وما السنة والجماعة؟ قال: ما انا عليه اليوم و أصحابه
+    </p>
+    <p class="mb-4">
+“orang-orang Yahudi bergolong-golong terpecah menjadi 71  atau 72 golongan, orang Nasrani bergolong-golong menjadi 71 atau 72 golongan, dan umatku (kaum muslimin) akan bergolong-golong menjadi 73 golongan.  Yang selamat dari padanya satu golongan dan yang lain celaka. Ditanyakan ’Siapakah yang selamat itu?’ Rasulullah SAW menjawab, ‘Ahlusunnah wal Jama’ah’. Dan kemudian ditanyakan lagi, ‘apakah assunah wal jama’ah itu?’ Beliau menjawab, ‘Apa yang aku berada di atasnya, hari ini, dan beserta para sahabatku (diajarkan oleh Rasulullah SAW dan diamalkan beserta para sahabat)."
+</p>
+<p class="mb-4">
+
+Menurut Hadratusy Syaikh KH. Muhammad Hasyim Asy’ari dalam ktabnya  Ziyadah at-Ta’liqat, Ahlussunnah wal Jama’ah adalah :
+</p>
+<p class="mb-4">
+أما أهل السنة فهم أهل التفسير و الحديث و الفقه فإنهم المهتدون المتمسكون بسنة النبي صلى الله عليه وسلم والخلفاء بعده الراشدين وهم الطاءفة الناجية قالوا وقد اجتمعت اليوم في مذاهب أربعة الحنفيون والشافعيون و المالكيون والحنبليون
+</p>
+<p class="mb-4">
+“Adapun Ahlussunnah wal Jama’ah adalah kelompok ahli tafsir, ahli hadis, dan ahli fikih. Merekalah yang mengikuti dan berpegang teguh dengan sunnah Nabi dan sunnah khulafaurrasyidin setelahnya. Mereka adalah kelompok yang selamat. Ulama mengatakan : Sungguh kelompok tersaebut sekarang ini terhimpun dalam madzhab yang empat yaitu madzhab Hanafi, Syafi’i, Maliki, dan Hanbali.”
+<p class="mb-4">
+Dalam kajian akidah/ilmu kalam istilah Ahlussunnah wal Jama’ah dinisbatkan pada paham yag diusung oleh Abu Hasan al-Asy’ari dan Abu Mansur al-Maturidi, yang menentang paham Khawarij dan Jabariyah (yang cenderung tekstual) dan paham Qadariyah dan Mu’tazilah (yang cenderung liberal).
+</p>
+<p class="mb-4">
+Dalam kajian fikih, istilah Ahlussunnah wal Jama’ah disisbatkan pada paham Sunni yaitu merujuk pada fikih 4 (empat) madzhab (Hanafi, Maliki, Syafi’i, dan Hanbali) yang berbeda dengan paham fikih Syi’iy, Dzahiriy, Ja’fariy.
+</p>
+<p class="mb-4">
+Dari situlah kemudian NU menjadikan Ahlussunnah wal Jama’ah sebagai asas oraganisasi, yaitu dalam bidang aqidah mengikuti Abu Hasan Asy’ari dan Abu Mansur al-Maturidi. Sedangkan dalam bidang fikih mengikuti salah satu dari fikih 4 (empat) madzhab yaitu madzhab Syafi’i (Syafi’iyyah).
+</p>
+<p class="mb-4">
+Kemudian, pengertian Ahlussunnah wal Jama’ah dalam bidang tashawwuf, NU mengikuti Imam al-Junaidi al-Bagdadi (w. 297 H/ 910 M) dan Imam al-Ghazali at-Thusi (w,505 H/ 1111M)
+</p>
+<p class="mb-4">
+B. Mengapa NU mengikuti paham Ahlussunnah wal Jama’ah ?
+</p>
+<p class="mb-4">
+Sebagaimana di jelaskan di atas, istilah Ahlussunnah wal Jama’ah pada mulanya adalah terkait dengan perbincangan masalah akidah yang menengahi dua paham yang saling bertentangan. Ahlussunnah wal Jama’ah dianggap sebagai paham yang moderat yaitu meyakini ke-Maha Kuasa-an Alloh dan menghargai ikhtiyar (akal) manusia.
+</p>
+<p class="mb-4">
+Demikian juga dalam bidang fikih, pendapat-pendapat Imam Syafi’i dan para pengikut/muridnya dianggap paling moderat yaitu mengabungkan antara dalil naqly (al-Qur’an dan as-Sunnah) dan aqly (ijtihad : ijma’ dan qiyas).
+</p>
+<p class="mb-4">
+Dalam bidang tashawwuf, ajaran-ajaran al-Junaidi dan al-Ghazali  dianggap moderat, yaitu menggabungkan antara syariah/fikih dan haqiqat/substansi.
+</p>
+<p class="mb-4">
+Selain dianggap sebagai model berpikir moderat (wasathiyyah) dan ihtiyath (kehati-hatian/antisapatif) dalam bidang ibadah, alasan NU mengikuti Ahlussunnah wal Jama’ah juga dikarenakan para sahabat Nabi perlu diikuti, karena merekalah yang mengetahui dan memahami terhapa semua yang dilakukan oleh Nabi.Oleh karena itu Nabi mengatakan : ما انا عليه اليوم و أصحابه. Bahkan dalam hadis disebutkan bahwa mereka (para sahabat) dijamin masuk surga.
+</p>
+<p class="mb-4">
+Hal ini dikuatkan oleh hadis :
+</p>
+<p class="mb-4">
+عَنْ أَبِي نَجِيْحٍ الْعِرْبَاضِ بْنِ سَاريةَ رَضي الله عنه قَالَ : وَعَظَنَا رَسُوْلُ اللهِ صَلىَّ الله عليه وسلم مَوْعِظَةً وَجِلَتْ مِنْهَا الْقُلُوْبُ، وَذَرِفَتْ مِنْهَا الْعُيُوْنُ، فَقُلْنَا : يَا رَسُوْلَ اللهِ، كَأَنَّهَا مَوْعِظَةُ مُوَدِّعٍ، فَأَوْصِنَا، قَالَ : أُوْصِيْكُمْ بِتَقْوَى اللهِ عَزَّ وَجَلَّ، وَالسَّمْعِ وَالطَّاعَةِ وَإِنْ تَأَمَّرَ عَلَيْكُمْ   عَبْدٌ، فَإِنَّهُ مَنْ يَعِشْ مِنْكُمْ فَسَيَرَى اخْتِلاَفاً كًثِيْراً. فَعَلَيْكُمْ بِسُنَّتِي وَسُنَّةِ الْخُلَفَاءِ الرَّاشِدِيْنَ الْمَهْدِيِّيْنَ عَضُّوا عَلَيْهَا بِالنَّوَاجِذِ، وَإِيَّاكُمْ   وَمُحْدَثَاتِ اْلأُمُوْرِ، فَإِنَّ كُلَّ بِدْعَةٍ ضَلاَلَةٌ [رَوَاه داود والترمذي وقال : حديث حسن صحيح  
+</p>
+<p class="mb-4">
+Dari Abu Najih Al Irbadh bin Sariyah radhiallahuanhu dia berkata : Rasulullah shollallohu ‘alaihi wa sallam memberikan kami nasehat yang membuat hati kami bergetar dan air mata kami bercucuran. Maka kami berkata : Ya Rasulullah, seakan-akan ini merupakan nasehat perpisahan, maka berilah kami wasiat. Rasulullah shollallohu ‘alaihi wa sallam bersabda : “ Saya wasiatkan kalian untuk bertakwa kepada Allah ta’ala, tunduk dan patuh kepada pemimpin kalian meskipun yang memimpin kalian adalah seorang budak. Karena diantara kalian yang hidup (setelah ini) akan menyaksikan banyaknya perselisihan. Hendaklah kalian berpegang teguh terhadap ajaranku dan ajaran khulafaurrasyidin yang mendapatkan petunjuk, gigitlah (genggamlah dengan kuat) dengan geraham. Hendaklah kalian menghindari perkara yang diada-adakan, karena semua perkara bid’ah adalah sesat.
+</p>
+<p class="mb-4">
+(Riwayat Abu Daud dan Turmuzi, dia berkata : hasan shahih)
+</p>
+<p class="mb-4">
+Dengan demikian dapat dikatakan  bahwa Ahlussunnah wal Jama’ah menurut  NU (ASWAJA  AN-NAHDHIYYAH) adalah mengikuti pola pikir Abu Hasan al-Asy’ari dan Abu Mansur al-Maturidi dalam bidang akidah, mengikuti pola pikir Imam Syafi’i dalam fikih (beribadah dan bermuamalah), dan mengikuti al-Junaidi dan al-Ghazali dalam bertashawwuf, yang kesemuanya pola pikirnya adalah moderat, tawasut, tawazun, atau ta’adul, dan menjaga amaliyah para sahabat Nabi.
+</p>
+<p class="mb-4">
+C. Implementasi (pengamalan) Ahlussunnah wal Jama’ah
+</p>
+<p class="mb-4">
+Prinsip moderat yang ada dalam ASWAJA AN-NAHDHIYYAH itu dalam tataran yang lebih riil dapat dicontohkan serbagai beikut :
+</p>
+<p class="mb-4">
+a. Bidang akidah
+</p>
+<p class="mb-4">
+Dalam menjalani kehidupan atau menghadapi persoalan-persoalan, orang NU tidak boleh hanya bergantung pada kekuasaan Alloh (pasrah) atau sebaliknya hanya mengandalkan kemampuan akal (teori atau ilmu pengetahuan). Kaduanya harus dilakukan secara bersamaan.
+</p>
+<p class="mb-4">
+ b. Bidang Fikih (Ibadah)
+</p>
+<p class="mb-4">
+Dalam memegangi hukum fikih, NU tidak boleh “HANYA” berpegang/berlandaskan pada pendapat-pendapat yang ada (qauly) tetapi juga harus memperhatikan dan mengetahui perkembangan zaman dan ilmu pengetahuan (manhajiy). Motode berpikir  ini diputuskan dalam MUNAS NU di Lampung dan prinsip ini ada dalam ungkapan :
+</p>
+<p class="mb-4">
+ المحافظة على القديم الصالح والأخذ بالجديد الأصلح
+</p>
+<p class="mb-4">
+    “Tetap menjaga/ berpegang pada pendapat/tradisi lama (ulama’ terdahulu,   salafussholih) yang baik (relevan), namun tetap mengambil pendapat-pendapat baru yang baik (yang lebih relevan/susuai dengan kondisi zaman dan ilmu pengetahuan)”.
+</p>
+<p class="mb-4">
+Dalam beribadah warga NU juga harus berimbang antara ibadah mahdhoh (ritual, individual, vertikal) dan ibadah ghairu mahdhah (basyariyyah, insaniyyah, ijtimaiyyah, sosial, kemanusiaan, kemasyarakatan, horisontal)
+</p>
+<p class="mb-4">
+c. Bidang Tashawwuf
+</p>
+<p class="mb-4">
+Dalam menjalankan ibadah, warga NU harus menggabungkan antara hakikat dan syariat. Aturan-aturan fikih (syarat dan rukun) tetap harus dipenuhi, namun di sisi lain penghayatan terhadap isi, makna, hakikat, tetap harus diperhatikan.  
+</p>
+<p class="mb-4">
+Demikian juga dalam bertsahwwuf (menjalankan amaliyah dzikir/wirid, mengikuti thoriqat) tidak boleh melupakan urusan umat dan keluarga.
+</p>
+<p class="mb-4">
+Adapun menjaga tradisi (amaliyah) para sabahat, oleh NU – dalam bidang ibadah- antara lain adalah dengan tetap mempertahankan Tarawih minimal 23 rakaat, adzan Jumat dua kali, dan lain-lain serta pola pikir/metode ijtihad yang dilakukan oleh para sahabat Nabi terutama khulafaurrasyidun.
+</p>
+<p class="mb-4">
+Mengikuti apa yang dilakukan oleh para sahabat, meskipun tidak dilakukan oleh Nabi, BUKAN BID’AH. Karena hadis di atas jelas bahwa Rosul memerintahkan agar berpegang kepada sunnahnya dan “sunnah” (amaliyah, tradisi, apa yang dilakukan) oleh para sahabat. Maka pengertian “bid’ah” dalam hadis وَإِيَّاكُمْ   وَمُحْدَثَاتِ اْلأُمُوْرِ، فَإِنَّ كُلَّ بِدْعَةٍ ضَلاَلَةٌ yang disampaikan oleh Rasul setelah   فعليكم بِسُنَّتِي وَسُنَّةِ الْخُلَفَاءِ الرَّاشِدِيْنَ  berarti di luar yang dilakukan oleh Nabi dan para sahabat.
+</p>
+<p class="mb-4">
+Puncaknya yang ingin dicapai NU dari asas ASWAJA AN-NAHDHIYYAH adalah  prinsip tawasuth/moderat dan merawat sunnah Rasul dan “sunnah” para sahabat.
+</p>
+<p class="mb-4">
+Wallohu a’lam bishshowab
+            </p>
+            Source :
+            <a href="https://unupurwokerto.ac.id/pengertian-dan-metode-berpikir-ahlussunnah-wal-jamaah/" class="text-blue-600">https://unupurwokerto.ac.id/pengertian-dan-metode-berpikir-ahlussunnah-wal-jamaah/</a>
+        </div>
+
+        <!-- Share Icons -->
+        <div class="mt-6 flex space-x-6">
+            <a href="#" class="text-green-600 text-2xl hover:text-green-800">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="#" class="text-green-600 text-2xl hover:text-green-800">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="#" class="text-green-600 text-2xl hover:text-green-800">
+                <i class='bx bxl-whatsapp'></i>
+            </a>
+        </div>
+
+        <!-- Back to Articles -->
+        <div class="mt-10">
+            <a href="../artikel.html" class="text-green-600 font-medium hover:underline">&larr; Kembali ke Artikel Dakwah</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-100 py-6">
+        <p class="text-center text-sm text-black">Copyright © 2024 Made with <span class="text-red-500">♥</span> Ahyar Nur Ichwan || All Right Reserved</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+</body>
+</html>
